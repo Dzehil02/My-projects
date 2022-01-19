@@ -1,0 +1,27 @@
+body {
+   margin: 0;
+}
+
+.wrapper {
+   display: grid;
+   grid-template-columns: 4fr 1fr;
+   height: 80vh;
+}
+
+.trades-container {
+   overflow-y: auto;
+}
+
+.trades-container__header, .trade {
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr;
+   text-align: center;
+}
+
+.buy {
+   background-color: #11FF11;
+}
+
+.sell {
+   background-color: #d3302a;
+}
