@@ -1,0 +1,110 @@
+html {
+box-sizing: border-box;
+font-size: 7px;
+background: #ffc600;
+}
+
+*, *::before, *::after {
+   box-sizing: inherit;
+}
+
+body {
+   padding: 0;
+   margin: 0;
+   font-family: 'Quicksand', cursive;
+}
+
+h1 {
+   text-align: center;
+   font-size: 8rem;
+   line-height: 1;
+   margin-top: 15px;
+   margin-bottom: 15px;
+}
+
+
+.button_list {
+   display: flex;
+   justify-content: space-around;
+   margin-bottom: 10px;
+}
+
+.stylebtn {
+   background: rgba(163, 88, 14, 0.425);
+   color: rgb(0, 0, 0);
+   border-radius: 0;
+   border: 0;
+   font-size: 16px;
+   font-weight: 400;
+   border-radius: 5px;
+   padding: 6px 12px;
+}
+
+.stylebtn:hover {
+   background: rgba(90, 45, 0, 0.479);
+}
+
+.stylebtn:focus {
+   outline: none;
+   box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.4);
+   
+}
+
+.stylebtn:disabled {
+   background: rgba(255, 255, 255, 0.4);
+}
+
+.score {
+   background: rgba(255, 255, 255, 0.2);
+   padding: 0 3rem;
+   line-height: 1;
+   border-radius: 1rem;
+}
+
+.game {
+   width: 600px;
+   height: 500px;
+   display: flex;
+   flex-wrap: wrap;
+   margin: 0 auto;
+}
+
+.hole {
+   flex: 1 0 33.33%;
+   overflow: hidden;
+   position: relative;
+}
+
+.hole:after {
+display: block;
+background: url(dirt.svg) bottom center no-repeat;
+background-size: contain;
+content: '';
+width: 100%;
+height: 70px;
+position: absolute;
+z-index: 2;
+bottom: -30px;
+}
+
+.mole {
+   background: url('mole.svg') bottom center no-repeat;
+   background-size: 50%;
+   position: absolute;
+   top: 100%;
+   width: 100%;
+   height: 100%;
+   transition: all 0.4s;
+}
+
+.hole.up .mole {
+   top: 0;
+}
+
+ /* .btld2 {
+    visibility: hidden;
+} */
+
+/* .btld3 {
+   visibility: hidden;
+}  */
